@@ -1,0 +1,598 @@
+<html>
+
+<head>
+    <title>Watermelon University</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="waypoint/lib/jquery.waypoints.js"></script>
+</head>
+<body>
+
+<!--    nav-->
+<nav>
+    <ul>
+   <img src="image/nav.png" class="navsanjiao">
+    <li id="nav1" href="#step1">Field Spot</li>
+    <li id="nav2" href="#step2">Webbing</li>
+    <li id="nav3" href="#step3">Weight</li>
+    <li id="nav4" href="#step4">Stem</li>
+    <li id="nav5" href="#step5">Size</li>
+        <li id="nav6"><a href="#" target="_blank" id="feedback">Feedback</a></li>
+    </ul>
+    </nav>
+<!--gamepage-->
+<div id="gamebackground">
+<!--gameoptions-->
+    <div class="yellowbox-container">
+        <div class="yellowbox">
+    <!--playgame-->
+            <img src="image/exit.png" class="exit">
+            <div class="pacetaken">
+                <img src="image/gameyes.png" class="gameyesimg">
+                <img src="image/gameno.png" class="gamenoimg">
+            </div>
+
+            <p class="playgame">Pick the best watermelon.</p>
+            <div class="addscore"></div>
+            <p class="result1">Congratulations! You are graduated!</p>
+            <p class="result2">Sorry, you didn't pass. Try again!</p>
+            <img src="image/tryagain.png" class="tryagain hide">
+    <!--game1-->
+            <p class="yellowboxp yellowboxp2" id="yellowboxp">QUESTION 1</p>
+            <div class="gameflexbox">
+                <div class="gameboxleftcell"></div>
+    <!--option1-->
+                <div class="gameoption gameoptionback" id="gameoption1">
+                    <p class="gamewatertext">A</p>
+                    <img src="image/watermelon1.png" class="gamewatermelon" id="gameoptionfalse1"></div>
+    <!--optonn2-->
+                <div class="gameoption gameoptionback" id="gameoption11">
+                    <p class="gamewatertext">B</p>
+                    <img src="image/watermelonspot3.png" class="gamewatermelon" id="gameoptiontrue1"></div>
+                <div class="gameboxrightcell"></div>
+
+    <!--game2-->
+    <!--option1-->
+                <div class="gameoption gameoptionback" id="gameoption2">
+                    <p class="gamewatertext">A</p>
+                    <img src="image/watermelonspot3.png" class="gamewatermelon gamewatermelon2" id="gameoptionfalse2"></div>
+    <!--optonn2-->
+                <div class="gameoption gameoptionback" id="gameoption21">
+                    <p class="gamewatertext">B</p>
+                    <img src="image/watermelonspot3.png" class="gamewatermelon" id="gameoptiontrue2"></div>
+    <!--game3-->
+    <!--option1-->
+                <div class="gameoption gameoptionback" id="gameoption3">
+                    <p class="gamewatertext">A</p>
+                    <img src="image/watermelonwebbing3.png" class="gamewatermelon" id="gameoptiontrue3"></div>
+    <!--optonn2-->
+                <div class="gameoption gameoptionback" id="gameoption31">
+                    <p class="gamewatertext">B</p>
+                    <img src="image/watermelonwebbing2.png" class="gamewatermelon" id="gameoptionfalse3"></div>
+
+    <!--game4-->
+    <!--option1-->
+                <div class="gameoption gameoptionback" id="gameoption4">
+                    <p class="gamewatertext">A</p>
+                    <img src="image/watermelonstem2.png" class="gamewatermelon" id="gameoptionfalse4"></div>
+    <!--optonn2-->
+                <div class="gameoption gameoptionback" id="gameoption41">
+                    <p class="gamewatertext">B</p>
+                    <img src="image/watermelonstem4.png" class="gamewatermelon" id="gameoptiontrue4"></div>
+
+    <!--game5-->
+    <!--option1-->
+                <div class="gameoption gameoptionback" id="gameoption5">
+                    <p class="gamewatertext">A</p>
+                    <img src="image/watermelongame5.png" class="gamewatermelon" id="gameoptiontrue5"></div>
+    <!--optonn2-->
+                <div class="gameoption gameoptionback" id="gameoption51">
+                    <p class="gamewatertext">B</p>
+                    <img src="image/watermelonspot2.png" class="gamewatermelon, gamewatermelon2" id="gameoptionfalse5"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--banner  -->
+<div class="title">
+    <div class="title-banner"></div>
+    <img src="image/watermelonuniversity.png" class="schoolsign">
+    <p class="titlep">Watermelon University</p>
+    </div>
+<div class="outer">
+    <div class="inner">
+    <p id="bannerp">PICK THE BEST<br> WATERMELON </p>
+    <img src="image/banner.png" id="bannerimg">
+   </div>
+  </div>
+<div id="waypoint"></div>
+<!--instruction-->
+<!--step1-->
+<div class="stepbox"><p class="step" id="step1">STEP 1</p></div>
+
+
+<!--field spot-->
+<div class="flexbox">
+
+<!--left space-->
+    <div class="cellleft"></div>
+<div class="cellwhitebox">
+<div class="whitebox">
+    <p class="pick">Field Spot</p>
+    <p class="better">Find the field spot<br>
+the darker the better</p>
+    <div class="whybox" id="whybox1"><p class="why">Why?</p></div>
+</div>
+</div>
+<!--    watermelon comparition-->
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">BAD</p>
+    <img src="image/watermelon1.png" class="cellimage">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">OK</p>
+    <img src="image/watermelonspot2.png" class="cellimage">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">GOOD</p>
+    <img src="image/watermelonspot3.png" class="cellimage">
+        </div>
+    </div>
+<!--right space-->
+    <div class="cellright"></div>
+
+</div>
+
+<!--explanation -->
+    <div class="explanaitonbox" id="explanaitonbox1"><p class="explanaiton">
+        When you are picking a watermelon, look for the field spot. The field spot is where the watermelon sat on the ground and ripened in the sun. The darker the field spot is, the longer the watermelon was getting sunlights. If the field spot is white, or even nonexistent, this probably means that the watermelon was picked too soon, and will not be ripe.</p></div>
+
+<!--step2-->
+<div class="stepbox"><p class="step" id="step2">STEP 2</p></div>
+
+
+<!--field spot-->
+<div class="flexbox">
+
+<!--left space-->
+    <div class="cellleft"></div>
+<div class="cellwhitebox">
+<div class="whitebox2">
+    <p class="pick" id="pick2">Webbings</p>
+    <p class="better" id="better2">The more the better</p>
+    <div class="whybox" id="whybox2"><p class="why">Why?</p></div>
+</div>
+</div>
+<!--    watermelon comparition-->
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">BAD</p>
+    <img src="image/watermelon1.png" class="cellimage">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">OK</p>
+    <img src="image/watermelonwebbing2.png" class="cellimage">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">GOOD</p>
+    <img src="image/watermelonwebbing3.png" class="cellimage">
+        </div>
+    </div>
+<!--right space-->
+    <div class="cellright"></div>
+
+</div>
+
+<!--explanation -->
+    <div class="explanaitonbox" id="explanaitonbox2"><p class="explanaiton">
+Webbings are the weblike spots on the watermelon. It means that bees touched the pollinating parts of the watermelon in its early stages. The more pollination, the sweeter the fruit is. Trust the bees; they know where the sweetness is!</p></div>
+
+<!--step3-->
+<div class="stepbox"><p class="step" id="step3">STEP 3</p></div>
+
+
+<!--field spot-->
+<div class="flexbox">
+
+<!--left space-->
+    <div class="cellleft"></div>
+<div class="cellwhitebox">
+<div class="whitebox">
+    <p class="pick" id="pick3">Weight</p>
+    <p class="better" id="better2">The heavier the better</p>
+    <div class="whybox" id="whybox3"><p class="why">Why?</p></div>
+</div>
+</div>
+<!--    watermelon comparition-->
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">BAD</p>
+    <img src="image/watermelonweight2.png" class="cellimage" id="cellimage3">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">OK</p>
+    <img src="image/watermelonweight4.png" class="cellimage" id="cellimage3">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">GOOD</p>
+    <img src="image/watermelonweight3.png" class="cellimage" id="cellimage3">
+        </div>
+    </div>
+<!--right space-->
+    <div class="cellright"></div>
+
+</div>
+
+<!--explanation -->
+    <div class="explanaitonbox" id="explanaitonbox3"><p class="explanaiton">
+Good watermelons are heavy for their size, because heavier weights are indicative of higher water content (and thus greater ripeness). If you compare the weight of one watermelon with another of equal size - the heavier one will be the riper one.
+ </p></div>
+
+
+<!--step4-->
+<div class="stepbox"><p class="step" id="step4">STEP 4</p></div>
+
+
+<!--field spot-->
+<div class="flexbox">
+
+<!--left space-->
+    <div class="cellleft"></div>
+<div class="cellwhitebox">
+<div class="whitebox2">
+    <p class="pick" id="pick4">Stem</p>
+    <p class="better" id="better2">The older the better</p>
+    <div class="whybox" id="whybox4"><p class="why">Why?</p></div>
+</div>
+</div>
+<!--    watermelon comparition-->
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">BAD</p>
+    <img src="image/watermelonstem2.png" class="cellimage" id="cellimage4">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">OK</p>
+    <img src="image/watermelonstem3.png" class="cellimage" id="cellimage4">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">GOOD</p>
+    <img src="image/watermelonstem4.png" class="cellimage" id="cellimage4">
+        </div>
+    </div>
+<!--right space-->
+    <div class="cellright"></div>
+
+</div>
+
+<!--explanation -->
+    <div class="explanaitonbox" id="explanaitonbox4"><p class="explanaiton">
+A dried tail indicates that the watermelon is ripe. However, if the tail is green, it probably means that the watermelon was picked too soon and will not be ripe.</p></div>
+
+
+<!--step5-->
+<div class="stepbox"><p class="step" id="step5">STEP 5</p></div>
+
+
+<!--field spot-->
+<div class="flexbox">
+
+<!--left space-->
+    <div class="cellleft"></div>
+<div class="cellwhitebox">
+<div class="whitebox">
+    <p class="pick" id="pick5">Size</p>
+    <p class="better" id="better2">Normal size is the best</p>
+    <div class="whybox" id="whybox5"><p class="why">Why?</p></div>
+</div>
+</div>
+<!--    watermelon comparition-->
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">BAD</p>
+    <img src="image/watermelon1.png" class="cellimage" id="cellimage51">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">BAD</p>
+    <img src="image/watermelon1.png" class="cellimage" id="cellimage52">
+        </div>
+    </div>
+    <div class="cell">
+        <div class="innercell">
+    <p class="level">GOOD</p>
+    <img src="image/watermelonsize3.png" class="cellimage" id="cellimage53">
+        </div>
+    </div>
+<!--right space-->
+    <div class="cellright"></div>
+
+</div>
+
+<!--explanation -->
+<div class="explanaitonbox" id="explanaitonbox5"><p class="explanaiton">
+It is better to choose neither the largest nor the smallest watermelon. The size of a basket ball is a good size for watermeon. </p>
+</div>
+
+<!--gender-->
+<div id="gender">
+    <p class="gender">Watermelon has gender!</p>
+<!--animation-->
+    <div id="scrollanimation">
+    <img src="image/watermelonman.png" class="watermelonman">
+    <img src="image/watermelonwoman.png" class="watermelonwoman">
+    </div>
+
+        <div class="genderboxsapce">
+            <div class="genderbox"><div class="whiteback"><p class="genderman">The male watermelon are bigger, have an elongated shape, and a watery taste. </p></div></div>
+            <div class="genderbox"><div class="whitebackw"><p class="genderwoman">The female watermelon have a rounded shape and are very sweet. </p></div></div>
+        </div></div>
+
+<!--game-->
+<div class="gameimagebox">
+    <p class="game">Let's pick watermelons!</p>
+    <img src="image/game.png" class="gameimg">
+    <img src="image/button.png" class="button">
+</div>
+
+
+</body>
+
+<script>
+//nav
+    $("#nav1").click(function(){
+    event.preventDefault();
+    var step1=$($(this).attr("href")).offset().top;
+        $("html,body").animate({scrollTop:step1},500);
+
+    });
+
+    $("#nav2").click(function(){
+    event.preventDefault();
+    var step1=$($(this).attr("href")).offset().top;
+        $("html,body").animate({scrollTop:step1},500);
+
+    });
+
+    $("#nav3").click(function(){
+    event.preventDefault();
+    var step1=$($(this).attr("href")).offset().top;
+        $("html,body").animate({scrollTop:step1},500);
+
+    });
+
+    $("#nav4").click(function(){
+    event.preventDefault();
+    var step1=$($(this).attr("href")).offset().top;
+        $("html,body").animate({scrollTop:step1},500);
+
+    });
+
+    $("#nav5").click(function(){
+    event.preventDefault();
+    var step1=$($(this).attr("href")).offset().top;
+        $("html,body").animate({scrollTop:step1},1000);
+
+    });
+//gamepage
+    $("#gamebackground").hide();
+    $(".button").click(function(){
+        $("#gamebackground").show();
+        $("body").addClass('no-scroll');
+    });
+
+//step1
+$(function(){
+    $("#explanaitonbox1").hide();
+    $("#whybox1").click(function(){
+        $("#explanaitonbox1").slideToggle(400);
+    });
+});
+//step2
+    $(function(){
+    $("#explanaitonbox2").hide();
+    $("#whybox2").click(function(){
+        $("#explanaitonbox2").slideToggle(400);
+    });
+});
+ //step3
+    $(function(){
+    $("#explanaitonbox3").hide();
+    $("#whybox3").click(function(){
+        $("#explanaitonbox3").slideToggle(400);
+    });
+});
+ //step4
+    $(function(){
+    $("#explanaitonbox4").hide();
+    $("#whybox4").click(function(){
+        $("#explanaitonbox4").slideToggle(400);
+    });
+});
+ //step5
+    $(function(){
+    $("#explanaitonbox5").hide();
+    $("#whybox5").click(function(){
+        $("#explanaitonbox5").slideToggle(400);
+    });
+});
+
+var navMarginTop = 140;
+var waypointPos = document.querySelector('#waypoint').offsetTop;
+var imgcur0 = "image/nav.png";
+var imgcur1 = "image/nav1.png";
+window.addEventListener('scroll', function(e){
+    var spot = document.body.scrollTop + navMarginTop;
+    if ( spot >= waypointPos ) {
+        $(".navsanjiao").attr("src", imgcur1);
+        $('ul').addClass('alternative');
+    } else {
+        $(".navsanjiao").attr("src", imgcur0);
+        $('ul').removeClass('alternative')
+    }
+})
+
+
+$(document).ready(function(){
+   var waypoint = new Waypoint({
+  element: $('#step5'),
+  handler: function() {
+   $(".watermelonman").addClass("watermelonman2");
+   $(".watermelonman").removeClass("watermelonman");
+   $(".watermelonwoman").addClass("watermelonwoman2");
+   $(".watermelonwoman").removeClass("watermelonwoman");
+   $('.whiteback,.whitebackw'). delay(2000).fadeIn(900);
+  }
+});
+});
+
+
+//game
+    var score=0;
+
+$(".playgame").click(function(){
+  $(this).hide();
+  $("#yellowboxp").removeClass("yellowboxp");
+  $("#gameoption1,#gameoption11").removeClass("gameoption");
+});
+//quiz1
+$("#gameoptionfalse1").click(function(){
+    $(".gamenoimg").fadeIn(500).fadeOut(500);
+    $("#gameoption1, #gameoption11, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 2");
+    $("#gameoption2, #gameoption21").removeClass("gameoption")
+})
+$("#gameoptiontrue1").click(function(){
+    score++;
+    $(".gameyesimg").fadeIn(500).fadeOut(500);
+    $("#gameoption1, #gameoption11, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 2");
+    $("#gameoption2, #gameoption21").removeClass("gameoption")
+})
+
+//quiz2
+$("#gameoptionfalse2").click(function(){
+    $(".gamenoimg").fadeIn(500).fadeOut(500);
+    $("#gameoption2, #gameoption21, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 3");
+    $("#gameoption3, #gameoption31").removeClass("gameoption")
+})
+$("#gameoptiontrue2").click(function(){
+    score++
+    $(".gameyesimg").fadeIn(500).fadeOut(500);
+    $("#gameoption2, #gameoption21, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 3");
+    $("#gameoption3, #gameoption31").removeClass("gameoption")
+})
+
+//quiz3
+$("#gameoptionfalse3").click(function(){
+    $(".gamenoimg").fadeIn(500).fadeOut(500);
+    $("#gameoption3, #gameoption31, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 4");
+    $("#gameoption4, #gameoption41").removeClass("gameoption")
+})
+$("#gameoptiontrue3").click(function(){
+    score++
+    $(".gameyesimg").fadeIn(500).fadeOut(500);
+    $("#gameoption3, #gameoption31, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 4");
+    $("#gameoption4, #gameoption41").removeClass("gameoption")
+})
+
+//quiz4
+$("#gameoptionfalse4").click(function(){
+    $(".gamenoimg").fadeIn(500).fadeOut(500);
+    $("#gameoption4, #gameoption41, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 5");
+    $("#gameoption5, #gameoption51").removeClass("gameoption")
+})
+$("#gameoptiontrue4").click(function(){
+    score++
+    $(".gameyesimg").fadeIn(500).fadeOut(500);
+    $("#gameoption4, #gameoption41, .gameboxrightcell").addClass('gameoption');
+    $(".yellowboxp2").text("QUESTION 5");
+    $("#gameoption5, #gameoption51").removeClass("gameoption")
+})
+
+//quiz5
+$("#gameoptionfalse5").click(function(){
+    $(".gamenoimg").fadeIn(500).fadeOut(500);
+    $("#gameoption5, #gameoption51, #yellowboxp, .gameboxrightcell").addClass('gameoption');
+    if(score>=3){
+        $(".addscore").text("You get "+score+" points").show();
+        $(".result1").show();
+        $(".tryagain").removeClass('hide');
+    }else if(score===1 || score===0){
+        $(".addscore").text("You get "+score+" point").show();
+        $(".result2").show();
+        $(".tryagain").removeClass('hide');
+    }else{
+        $(".addscore").text("You get "+score+" points").show();
+        $(".result2").show();
+        $(".tryagain").removeClass('hide');
+    };
+});
+
+$("#gameoptiontrue5").click(function(){
+    $(".gameyesimg").fadeIn(500).fadeOut(1000);
+    score++
+    $("#gameoption5, #gameoption51, #yellowboxp, .gameboxrightcell").addClass('gameoption');
+    if(score>=3){
+        $(".addscore").text("You get "+score+" points").show();
+        $(".result1").show();
+        $(".tryagain").removeClass('hide');
+    }else if(score===1 || score===0){
+        $(".addscore").text("You get "+score+" point").show();
+        $(".result2").show();
+        $(".tryagain").removeClass('hide');
+    }
+    else{
+        $(".addscore").text("You get "+score+" points").show();
+        $(".result2").show();
+        $(".tryagain").removeClass('hide');
+    };
+});
+
+$('.tryagain').click(function(){
+    $(this).addClass("hide");
+    $("#yellowboxp").removeClass("gameoption");
+    $("#gameoption1,#gameoption11").removeClass("gameoption");
+    $(".addscore").hide();
+    $(".yellowboxp2").text("QUESTION 1");
+    $(".result1,.result2").hide();
+    score=0;
+})
+
+$(".exit").click(function(){
+    $("#gamebackground").hide();
+    $("body").removeClass('no-scroll');
+})
+
+
+    </script>
+</html>

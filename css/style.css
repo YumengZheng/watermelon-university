@@ -1,0 +1,1592 @@
+/*font*/
+@font-face {
+    font-family:Noteworthy;
+    src: url(/css/Noteworthy-Bold.ttf);
+}
+@font-face {
+    font-family:Myriad Pro;
+    src: url(/css/Myriad Pro Regular.ttf);
+}
+
+/*screen 2*/
+@media only screen and  (min-width:950px) and  (max-width:10000px){
+/*html*/    
+    html{
+    background-color:#87BE9E;
+    height: 3000px;
+    font-family: Myriad Pro;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/*nav*/
+.navsanjiao{
+    width:25%;
+    display: block;
+    position: absolute;
+    margin:0 0 0 -24%;
+    z-index:100000;
+}
+li{ 
+    list-style: none;
+    width:79px;
+    height: 30px;
+    background-color: rgba(135, 190, 158, 0.5);
+    padding:11 0 0 2px; 
+    text-align:center;
+    color:#FDFAD1;
+    cursor: pointer;
+}
+ul{
+    position:fixed;
+    z-index: 100;
+    margin-top:140px;
+    width:80px;
+    right:-80px;
+    transition: right 1s;
+}
+ul:hover{
+    right:0px;
+}
+
+ul.alternative li {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FDFAD1;
+}
+#feedback{
+    color: inherit;
+    text-decoration: none;  
+}
+/*title*/
+.schoolsign{
+    margin-top:10px;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 1;
+}
+.title{
+    color: white;
+    font-size:30px;
+    margin-bottom: 7px;
+    position: relative;
+    display: inline-block;
+}
+.title-banner{
+    display: none;
+}
+.titlep{
+    display:inline;
+    position: relative;
+    z-index: 1;
+}
+
+/*banner*/
+#bannerp{
+   color:#87BE9E;
+   font-size:64px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+#bannerimg{ 
+   display: inline-block;
+   margin-left: 55px;
+   vertical-align: middle;
+}
+.outer{
+    display: flex;
+    flex: 1;
+    background-color: #FDFAD1;
+    height: 465;
+}
+.inner{
+    height: auto;
+    margin:auto auto;
+}
+
+/*instruction*/
+/*step*/
+.stepbox{
+    display: flex;
+    height: 4%;
+/*    border: solid red;*/
+}
+.step{
+    width: 97px;
+    margin: 4% auto 0 ;
+    color:white;
+    font-size: 35px;
+/*    border: solid red;*/
+}
+/*field spot*/
+.flexbox{
+    display: flex;
+    height:8%;
+}
+.cell{
+    width: 21.3%;
+}
+.cellleft{
+    width:5%;
+}
+.cellwhitebox{
+    width:22%;
+}
+.cellright{
+    width:9%;
+}
+/*whitebox*/
+.whitebox{
+    display: block;
+    float: right;
+    background-color: white;
+    width:100%;
+    height:100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.whitebox2{
+    display: block;
+    float: right;
+    background-color: white;
+    width:100%;
+    height:100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.pick{
+    font-family:Noteworthy;
+    font-size:40px;
+    position: relative;
+    width: 150px;
+    padding: 20px 0;
+    margin: 6px auto;
+    color: 87BE9E;
+}
+#pick2{
+    width: 140px;
+}
+#pick3{
+    width: 100px;
+}
+#pick4{
+    width: 77px;
+}
+#pick5{
+    width: 62px;
+}
+.better{
+    font-size: 24;
+    margin: 0 auto;
+    color: 59703E;
+    text-align: center;
+}
+#better2{
+    margin: 20px auto;
+}
+.whybox{
+    text-align: center;
+    background-color: FDFAD1;
+    font-family:Noteworthy;
+    height: 62px;
+    cursor: pointer;
+    margin-top:26px;
+}
+#whybox2{
+    margin-top:39px;
+}
+#whybox3{
+    margin-top:39px;
+}
+#whybox4{
+    margin-top:39px;
+}
+#whybox5{
+    margin-top:39px;
+}
+
+.why{
+    font-size:40px;
+    margin-top:22px;
+    color:#DDCC85;
+    padding-top:3px; 
+}
+/*iname in cells*/
+.innercell{
+    display: block;
+    width: 64%;
+/*    border: solid yellow 1px;*/
+    float: right;
+
+}
+.cellimage{
+    width:100%;
+/*    border: solid yellow 1px;*/
+}
+#cellimage3{
+    margin-top: 8px;
+}
+#cellimage4{
+    margin-top: 84px;
+}
+/*
+#cellimage51{
+    width:65%;
+    margin:30px;
+    
+}
+#cellimage52{
+    width:110%;
+    margin: -10px;
+}
+#cellimage53{
+    margin-top: 13px;
+}
+*/
+#cellimage51{
+    width:65%;
+    margin-top: 30%;
+    margin-left: 15%;
+}
+#cellimage52{
+    width:110%;
+    margin-top: 10%;
+    margin-left: -7%;
+}
+#cellimage53{
+    margin-top: 18%;
+}
+.level{
+    text-align: center;
+    font-family:Noteworthy;
+    font-size:16px;
+    color:FDFAD1;
+    margin: 0 auto 14%;
+}
+/*explanation*/
+.explanaitonbox{
+    margin-top:40px;
+    display: flex;
+    height: 80px;
+    background-color:#ACD1BB;
+}
+
+.explanaiton{
+    width: 1080px;
+    color: white;
+    text-align:left;
+    margin: 14px 0 0 64px;
+    font-size: 16px;
+}
+
+/*gender*/
+.gender{
+    font-family:Noteworthy;
+    font-size: 35px;
+    color: white;
+    margin-left: 6%;
+    margin-top: 7%;
+}
+/*animation*/
+#scrollanimation{
+    margin-top:4.5%;
+    height: 12% ;
+/*    border: solid yellow 1px;*/
+}
+.watermelonman{
+    display: none;
+}
+.watermelonwoman{
+    display: none;
+}
+@keyframes man {
+    from {margin-left:-20%;}
+    to {margin-left: 23%;}
+    }
+@keyframes woman {
+    from {margin-right:-20%;}
+    to {margin-right: 23%;}
+    }
+.watermelonman2{
+    animation-name:man;
+    animation-duration: 2s;
+    margin-left: 23%;
+}
+.watermelonwoman2{
+    float: right;
+    margin-right: 23%;
+    animation-name:woman;
+    animation-duration: 2s;
+}
+.genderboxsapce{ 
+    display: flex;
+    flex: 2;
+    height:65px;
+/*    border:solid yellow 1px;*/
+
+}
+.genderbox{
+    width: 50%;
+/*    border:solid yellow 1px;*/
+}
+.whiteback{
+    display:none;
+    width: 49%;
+    margin-left:37%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 100%;
+}
+.whitebackw{
+    float:right;
+    display: none;
+    width: 49%;
+    margin-right: 34%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 100%;
+}
+.genderman{
+    display: block;
+    width: 88%;
+    height:auto;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white;
+    padding-left:2%;
+    padding-top:4%; 
+}
+.genderwoman{
+    display: block;
+    width: 88%;
+    height:auto;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white;
+    padding-left:3%;
+    padding-top:4%; 
+}    
+/*game*/
+.game{
+    font-family:Noteworthy;
+    font-size:35px;
+    color: white;
+    margin: 8% 0 0 6%; 
+    
+}
+.gameimg{
+    width:50%; 
+    margin: 5% 0 0 7%;
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+.button{
+     width:14%;
+    margin:5% 0 0 10%;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.gameimagebox{
+    margin:0 0 5% 2%;
+}
+
+/*gamepage*/
+#gamebackground{
+    background-color:rgba(255, 255, 255, 0.4);
+    display: block;
+    position:fixed;
+    z-index:1000;
+    width: 100%;
+    height: 100%;
+}
+.playgame{
+    display: block;
+    width:325px;
+    color: white;
+    font-size: 30px;
+    margin:21% auto;
+    cursor: pointer;
+    z-index:2000000;
+/*    border:solid yellow 1px; */
+}
+.result1, .result2{
+    display: none;
+    width:325px;
+    color: white;
+    font-size: 30px; 
+    margin:0 auto;
+    z-index:2000000;  
+}
+.addscore{
+    display: none;
+    width:325px;
+    color: white;
+    font-size: 30px;
+    margin:15% auto 0 ;
+    z-index:2000000;
+}
+.yellowbox-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.exit{
+    float: right;
+    margin: 10 10 0 0;
+}
+.yellowbox{
+    display: block;
+    width:619px;
+    height:380px;
+    background-color:#EAD9AC;
+}
+
+.tryagain{
+    width: 118px;
+    display:block;
+    margin: 20px auto;
+}
+.hide {
+    display:none;
+}
+
+.yellowboxp{
+    display:none;
+}   
+.yellowboxp2{
+    font-size: 24px;
+    color:white;
+    width: 20%;
+    margin:5% auto 0;
+    z-index: 100000;
+}
+.gamenoimg, .gameyesimg{
+    display:none;
+}
+.yellowboxcover2{
+    position:fixed;
+    background-color: #EAD9AC;
+    width: 0px;
+    height:380px;
+    animation-name: gamescore;
+    animation-duration: 2s;
+    z-index:9996; 
+}
+.gameyesimg2{
+    position:absolute;
+    height: 40px; 
+    z-index:9999;
+}
+.gamenoimg2{
+    position:absolute;
+    height: 40px; 
+    z-index:9997;
+}
+/*gameoption*/
+.pacetaken{
+    display: flex;
+    height: 40px;
+/*    border:solid yellow 1px;*/
+}
+.gameflexbox{
+    margin-top:4%;
+    display: flex;
+/*    border:solid yellow 1px;*/
+}
+.gameboxleftcell{
+    width:12%;
+}
+.gameboxrightcell{
+    width:12%;
+}
+/*showgame1*/
+.gameoptionback{
+    width:38%;
+/*    border:solid yellow 1px;*/
+}
+.gameoption{
+    display: none;
+}
+.gamewatertext{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family:Noteworthy;
+}
+.gamewatermelon{
+    display: block;
+    width: 52%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.gamewatermelon2{
+    display: block;
+    width: 40%;
+/*    border:solid yellow 1px;*/
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+}
+
+/*screen 2*/
+@media only screen and (min-width:600px) and (max-width:950px){
+    html{
+    background-color:#87BE9E;
+    height: 3000px;
+    font-family: Myriad Pro;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/*nav*/
+.navsanjiao{
+    width:25%;
+    display: block;
+    position: absolute;
+    margin:0 0 0 -24%;
+    z-index:100000;
+}
+li{ 
+    list-style: none;
+    width:79px;
+    height: 30px;
+    background-color: rgba(135, 190, 158, 0.5);
+    padding:11 0 0 2px; 
+    text-align:center;
+    color:#FDFAD1;
+    cursor: pointer;
+}
+ul{
+    position:fixed;
+    z-index: 100;
+    margin-top:140px;
+    width:80px;
+    right:-80px;
+    transition: right 1s;
+}
+ul:hover{
+    right:0px;
+}
+
+ul.alternative li {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FDFAD1;
+}
+#feedback{
+    color: inherit;
+    text-decoration: none;  
+}
+/*title*/
+.schoolsign{
+    margin-top:10px;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 1;
+}
+.title{
+    color: white;
+    font-size:30px;
+    margin-bottom: 7px;
+    position: relative;
+    display: inline-block;
+}
+.title-banner{
+    display: none;
+}
+.titlep{
+    display:inline;
+    position: relative;
+    z-index: 1;
+}
+
+/*banner*/
+#bannerp{
+   color:#87BE9E;
+   font-size:50px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+#bannerimg{ 
+   display: inline-block;
+   margin-left: 55px;
+   vertical-align: middle;
+   width: 37%;
+}
+.outer{
+    display: flex;
+    flex: 1;
+    background-color: #FDFAD1;
+    height: 465;
+}
+.inner{
+    height: auto;
+    margin:auto auto;
+}
+
+/*instruction*/
+/*step*/
+.stepbox{
+    display: flex;
+    height: 4%;
+/*    border: solid red;*/
+}
+.step{
+    width: 97px;
+    margin: 4% auto 0 ;
+    color:white;
+    font-size: 25px;
+/*    border: solid red;*/
+}
+/*field spot*/
+.flexbox{
+    display: flex;
+    height:8%;
+}
+.cell{
+    width: 21.3%;
+}
+.cellleft{
+    width:5%;
+}
+.cellwhitebox{
+    width:22%;
+}
+.cellright{
+    width:9%;
+}
+/*whitebox*/
+.whitebox{
+    display: block;
+    float: right;
+    background-color: white;
+    width:100%;
+    height:68%;
+    border-top-left-radius: 35px;
+    border-top-right-radius:35px;
+}
+.whitebox2{
+    display: block;
+    float: right;
+    background-color: white;
+    width:100%;
+    height:60%;
+    border-top-left-radius: 35px;
+    border-top-right-radius:35px;
+}
+.pick{
+    font-family:Noteworthy;
+    font-size:30px;
+    position: relative;
+    width: 113px;
+    padding: 8% 0;
+    margin: 6px auto;
+    color: 87BE9E;
+}
+#pick2{
+    width: 108px;
+}
+#pick3{
+    width: 74px;
+}
+#pick4{
+    width: 58px;
+}
+#pick5{
+    width: 48px;
+}
+.better{
+    font-size: 18;
+    margin: 10 auto;
+    color: 59703E;
+    text-align: center;
+}
+#better2{
+    margin: 5% auto 0;
+}
+.whybox{
+    text-align: center;
+    background-color: FDFAD1;
+    font-family:Noteworthy;
+    height: 48px;
+    cursor: pointer;
+    margin-top:0px;
+}
+#whybox2{
+    margin-top:8%;
+}
+#whybox3{
+    margin-top:8%;
+}
+#whybox4{
+    margin-top:8%;
+}
+#whybox5{
+    margin-top:8%;
+}
+
+.why{
+    font-size:30px;
+    margin-top:5%;
+    color:#DDCC85;
+    padding-top:3px; 
+}
+/*iname in cells*/
+.innercell{
+    display: block;
+    width: 64%;
+/*    border: solid yellow 1px;*/
+    float: right;
+
+}
+.cellimage{
+    width:100%;
+/*    border: solid yellow 1px;*/
+}
+#cellimage3{
+    margin-top: 8px;
+}
+#cellimage4{
+    margin-top: 65px;
+}
+#cellimage51{
+    width:65%;
+    margin-top: 30%;
+    margin-left: 15%;
+}
+#cellimage52{
+    width:110%;
+    margin-top: 10%;
+    margin-left: -7%;
+}
+#cellimage53{
+    margin-top: 18%;
+}
+.level{
+    text-align: center;
+    font-family:Noteworthy;
+    font-size:16px;
+    color:FDFAD1;
+    margin: 0 auto 14%;
+}
+/*explanation*/
+.explanaitonbox{
+    margin-top:40px;
+    display: flex;
+    height: 80px;
+    background-color:#ACD1BB;
+}
+
+.explanaiton{
+    width: 1080px;
+    color: white;
+    text-align:left;
+    margin: 14px 0 0 64px;
+    font-size: 16px;
+}
+
+/*gender*/
+.gender{
+    font-family:Noteworthy;
+    font-size: 25px;
+    color: white;
+    margin-left: 6%;
+}
+/*animation*/
+#scrollanimation{
+    margin-top:4.5%;
+    height: 9% ;
+/*    border: solid yellow 1px;*/
+}
+.watermelonman{
+    display: none;
+}
+.watermelonwoman{
+    display: none;
+}
+@keyframes man {
+    from {margin-left:-20%;}
+    to {margin-left: 23%;}
+    }
+@keyframes woman {
+    from {margin-right:-20%;}
+    to {margin-right: 23%;}
+    }
+.watermelonman2{
+    animation-name:man;
+    animation-duration: 2s;
+    margin-left: 20.5%;
+    height: 90%;
+}
+.watermelonwoman2{
+    float: right;
+    margin-right: 21%;
+    animation-name:woman;
+    animation-duration: 2s;
+    height: 90%;
+}
+.genderboxsapce{ 
+    display: flex;
+    flex: 2;
+    height:65px;
+/*    border:solid yellow 1px;*/
+
+}
+.genderbox{
+    width: 50%;
+/*    border:solid yellow 1px;*/
+}
+.whiteback{
+    display:none;
+    width: 49%;
+    margin-left:37%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 100%; 
+/*    border:solid yellow 1px;*/
+}
+.whitebackw{
+    float:right;
+    display: none;
+    width: 49%;
+    margin-right: 34%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 100%;
+/*    border:solid yellow 1px;*/
+    
+}
+.genderman{
+    display: block;
+    width: 94%;
+    height:auto;
+    margin: 2% auto;
+    font-size: 14px;
+    color: white;
+    padding-left:10px;
+    padding-top:5px;     
+}
+.genderwoman{
+    display: block;
+    width: 94%;
+    height:auto;
+    margin: 2% auto;
+    font-size: 14px;
+    color: white;
+    padding-top:5px; 
+}
+/*game*/
+.game{
+    font-family:Noteworthy;
+    font-size: 25px;
+    color: white;
+    margin: 8% 0 0 6%; 
+    
+}
+
+.gameimg{
+    width: 50%;
+    margin:5% 0 0 6%;
+    display: inline-block;
+    vertical-align: middle;
+/*    border: solid yellow 1px;*/
+}
+ 
+.button{
+    width:14%;
+    margin-top: 5%;
+    margin-left:10%;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+/*    border: solid yellow 1px;*/
+}
+.gameimagebox{
+    margin:0 0 5% 2%;
+}
+
+/*gamepage*/
+#gamebackground{
+    background-color:rgba(255, 255, 255, 0.4);
+    display: block;
+    position:fixed;
+    z-index:1000;
+    width: 100%;
+    height: 100%;
+}
+.playgame{
+    display: block;
+    width:325px;
+    color: white;
+    font-size: 30px;
+    margin:21% auto;
+    cursor: pointer;
+    z-index:2000000;
+/*    border:solid yellow 1px; */
+}
+.result1, .result2{
+    display: none;
+    width:325px;
+    color: white;
+    font-size: 30px; 
+    margin:0 auto;
+    z-index:2000000;  
+}
+.addscore{
+    display: none;
+    width:325px;
+    color: white;
+    font-size: 30px;
+    margin:15% auto 0 ;
+    z-index:2000000;
+}
+.yellowbox-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.exit{
+    float: right;
+    margin: 10 10 0 0;
+}
+.yellowbox{
+    display: block;
+    width:619px;
+    height:380px;
+    background-color:#EAD9AC;
+}
+
+.tryagain{
+    width: 118px;
+    display:block;
+    margin: 20px auto;
+}
+.hide {
+    display:none;
+}
+
+.yellowboxp{
+    display:none;
+}   
+.yellowboxp2{
+    font-size: 24px;
+    color:white;
+    width: 20%;
+    margin:5% auto 0;
+    z-index: 100000;
+}
+.gamenoimg, .gameyesimg{
+    display:none;
+}
+.yellowboxcover2{
+    position:fixed;
+    background-color: #EAD9AC;
+    width: 0px;
+    height:380px;
+    animation-name: gamescore;
+    animation-duration: 2s;
+    z-index:9996; 
+}
+.gameyesimg2{
+    position:absolute;
+    height: 40px; 
+    z-index:9999;
+}
+.gamenoimg2{
+    position:absolute;
+    height: 40px; 
+    z-index:9997;
+}
+/*gameoption*/
+.pacetaken{
+    display: flex;
+    height: 40px;
+/*    border:solid yellow 1px;*/
+}
+.gameflexbox{
+    margin-top:4%;
+    display: flex;
+/*    border:solid yellow 1px;*/
+}
+.gameboxleftcell{
+    width:12%;
+}
+.gameboxrightcell{
+    width:12%;
+}
+/*showgame1*/
+.gameoptionback{
+    width:38%;
+/*    border:solid yellow 1px;*/
+}
+.gameoption{
+    display: none;
+}
+.gamewatertext{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family:Noteworthy;
+}
+.gamewatermelon{
+    display: block;
+    width: 52%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.gamewatermelon2{
+    display: block;
+    width: 40%;
+/*    border:solid yellow 1px;*/
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+}
+
+/*screen 3*/
+@media only screen and (max-width:600px){
+    html{
+    background-color:#87BE9E;
+    height: 3000px;
+    font-family: Myriad Pro;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/*nav*/
+.navsanjiao{
+    width:25%;
+    display: block;
+    position: absolute;
+    margin:0 0 0 -24%;
+    z-index:100000;
+}
+li{ 
+    list-style: none;
+    width:79px;
+    height: 30px;
+    background-color: rgba(135, 190, 158, 0.5);
+    padding:11 0 0 2px; 
+    text-align:center;
+    color:#FDFAD1;
+    cursor: pointer;
+}
+ul{
+    position:fixed;
+    z-index: 100;
+    margin-top:140px;
+    width:80px;
+    right:-80px;
+    transition: right 1s;
+}
+ul:hover{
+    right:0px;
+}
+
+ul.alternative li {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FDFAD1;
+}
+#feedback{
+    color: inherit;
+    text-decoration: none;  
+}
+/*title*/
+.schoolsign{
+    margin-top:10px;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 1;
+}
+.title{
+    color: white;
+    font-size:30px;
+    margin-bottom: 7px;
+    position: relative;
+    display: inline-block;
+}
+.title-banner{
+    display: none;
+}
+.titlep{
+    display:inline;
+    position: relative;
+    z-index: 1;
+}
+
+/*banner*/
+#bannerp{
+   color:#87BE9E;
+   font-size:30px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+#bannerimg{ 
+   display: inline-block;
+   margin-left:6%;
+   vertical-align: middle;
+   width: 37%;
+}
+.outer{
+    display: flex;
+    flex: 1;
+    background-color: #FDFAD1;
+    height: 465;
+}
+.inner{
+    height: auto;
+    margin:auto auto;
+}
+
+/*instruction*/
+/*step*/
+.stepbox{
+    display: flex;
+    height: 4%;
+/*    border: solid red;*/
+}
+.step{
+    width: 97px;
+    margin: 4% auto 0 ;
+    color:white;
+    font-size: 25px;
+/*    border: solid red;*/
+}
+/*field spot*/
+.flexbox{
+    display: flex;
+    height:8%;
+}
+.cell{
+    width: 21.3%;
+}
+.cellleft{
+    width:5%;
+}
+.cellwhitebox{
+    width:22%;
+}
+.cellright{
+    width:9%;
+}
+/*whitebox*/
+.whitebox{
+    display: block;
+    float: right;
+    background-color: white;
+    width:100%;
+    height:50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.whitebox2{
+    display: block;
+    float: right;
+    background-color: white;
+    width:100%;
+    height:50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.pick{
+    font-family:Noteworthy;
+    font-size:20px;
+    position: relative;
+    width: 75px;
+    padding: 10px 0;
+    margin:5px auto;
+    color: 87BE9E;
+}
+#pick2{
+    width: 70px;
+}
+#pick3{
+    width: 51px;
+}
+#pick4{
+    width:38px;
+}
+#pick5{
+    width: 31px;
+}
+.better{
+    font-size: 15;
+    margin: 0 auto;
+    color: 59703E;
+    text-align: center;
+}
+#better2{
+    margin: 10px auto;
+}
+.whybox{
+    text-align: center;
+    background-color: FDFAD1;
+    font-family:Noteworthy;
+    height: 35px;
+    cursor: pointer;
+    margin-top:-10px;
+}
+#whybox2{
+    margin-top:-5px;
+}
+#whybox3{
+    margin-top:-5px;
+}
+#whybox4{
+    margin-top:-5px;
+}
+#whybox5{
+    margin-top:-5px;
+}
+
+.why{
+    font-size:20px;
+    margin-top:5%;
+    color:#DDCC85;
+    padding-top:3px; 
+}
+/*iname in cells*/
+.innercell{
+    display: block;
+    width: 64%;
+/*    border: solid yellow 1px;*/
+    float: right;
+
+}
+.cellimage{
+    width:100%;
+/*    border: solid yellow 1px;*/
+}
+#cellimage3{
+    margin-top: 8px;
+}
+#cellimage4{
+    margin-top: 84px;
+}
+#cellimage51{
+    width:65%;
+    margin-top: 20%;
+    margin-left: 15%;
+}
+#cellimage52{
+    width:110%;
+    margin-top: 10%;
+    margin-left: -7%;
+}
+#cellimage53{
+    margin-top: 13px;
+}
+.level{
+    text-align: center;
+    font-family:Noteworthy;
+    font-size:16px;
+    color:FDFAD1;
+    margin: 0 auto 14%;
+}
+/*explanation*/
+.explanaitonbox{
+    margin-top:40px;
+    display: flex;
+    height: 80px;
+    background-color:#ACD1BB;
+}
+
+.explanaiton{
+    width: 1080px;
+    color: white;
+    text-align:left;
+    margin: 14px 0 0 64px;
+    font-size: 16px;
+}
+
+/*gender*/
+.gender{
+    font-family:Noteworthy;
+    font-size: 25px;
+    color: white;
+    margin-left: 6%;
+}
+/*animation*/
+#scrollanimation{
+    margin-top:4.5%;
+    height: 5% ;
+/*    border: solid yellow 1px;*/
+}
+.watermelonman{
+    display: none;
+}
+.watermelonwoman{
+    display: none;
+}
+@keyframes man {
+    from {margin-left:-20%;}
+    to {margin-left: 23%;}
+    }
+@keyframes woman {
+    from {margin-right:-20%;}
+    to {margin-right: 23%;}
+    }
+.watermelonman2{
+    animation-name:man;
+    animation-duration: 2s;
+    margin-left: 20.5%;
+    height: 90%;
+}
+.watermelonwoman2{
+    float: right;
+    margin-right: 21%;
+    animation-name:woman;
+    animation-duration: 2s;
+    height: 90%;
+}
+.genderboxsapce{ 
+    display: flex;
+    flex: 2;
+    height:65px;
+/*    border:solid yellow 1px;*/
+
+}
+.genderbox{
+    width: 50%;
+/*    border:solid yellow 1px;*/
+}
+.whiteback{
+    display:none;
+    width: 49%;
+    margin-left:37%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 100%; 
+}
+.whitebackw{
+    float:right;
+    display: none;
+    width: 49%;
+    margin-right: 34%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 100%;
+    
+}
+.genderman{
+    display: block;
+    width: 94%;
+    height:auto;
+    margin: 2% auto;
+    font-size:10px;
+    color: white;
+    padding-left:5px;
+    padding-top:8px;     
+}
+.genderwoman{
+    display: block;
+    width: 94%;
+    height:auto;
+    margin: 2% auto;
+    font-size: 10px;
+    color: white;
+    padding-left:8px;
+    padding-top:8px; 
+}
+/*game*/
+.game{
+    font-family:Noteworthy;
+    font-size: 25px;
+    color: white;
+    margin: 8% 0 0 6%; 
+    
+}
+
+.gameimg{
+    width: 50%;
+    margin:5% 0 0 6%;
+    display: inline-block;
+    vertical-align: middle;
+/*    border: solid yellow 1px;*/
+}
+ 
+.button{
+    width:14%;
+    margin-top: 5%;
+    margin-left:10%;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+/*    border: solid yellow 1px;*/
+}
+.gameimagebox{
+    margin:0 0 5% 2%;
+}
+
+/*gamepage*/
+#gamebackground{
+    background-color:rgba(255, 255, 255, 0.4);
+    display: block;
+    position:fixed;
+    z-index:1000;
+    width: 100%;
+    height: 100%;
+}
+.playgame{
+    display: block;
+    width:325px;
+    color: white;
+    font-size: 30px;
+    margin:21% auto;
+    cursor: pointer;
+    z-index:2000000;
+/*    border:solid yellow 1px; */
+}
+.result1, .result2{
+    display: none;
+    width:325px;
+    color: white;
+    font-size: 30px; 
+    margin:0 auto;
+    z-index:2000000;  
+}
+.addscore{
+    display: none;
+    width:325px;
+    color: white;
+    font-size: 30px;
+    margin:15% auto 0 ;
+    z-index:2000000;
+}
+.yellowbox-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.exit{
+    float: right;
+    margin: 10 10 0 0;
+}
+.yellowbox{
+    display: block;
+    width:619px;
+    height:380px;
+    background-color:#EAD9AC;
+}
+
+.tryagain{
+    width: 118px;
+    display:block;
+    margin: 20px auto;
+}
+.hide {
+    display:none;
+}
+
+.yellowboxp{
+    display:none;
+}   
+.yellowboxp2{
+    font-size: 24px;
+    color:white;
+    width: 20%;
+    margin:5% auto 0;
+    z-index: 100000;
+}
+.gamenoimg, .gameyesimg{
+    display:none;
+}
+.yellowboxcover2{
+    position:fixed;
+    background-color: #EAD9AC;
+    width: 0px;
+    height:380px;
+    animation-name: gamescore;
+    animation-duration: 2s;
+    z-index:9996; 
+}
+.gameyesimg2{
+    position:absolute;
+    height: 40px; 
+    z-index:9999;
+}
+.gamenoimg2{
+    position:absolute;
+    height: 40px; 
+    z-index:9997;
+}
+/*gameoption*/
+.pacetaken{
+    display: flex;
+    height: 40px;
+/*    border:solid yellow 1px;*/
+}
+.gameflexbox{
+    margin-top:4%;
+    display: flex;
+/*    border:solid yellow 1px;*/
+}
+.gameboxleftcell{
+    width:12%;
+}
+.gameboxrightcell{
+    width:12%;
+}
+/*showgame1*/
+.gameoptionback{
+    width:38%;
+/*    border:solid yellow 1px;*/
+}
+.gameoption{
+    display: none;
+}
+.gamewatertext{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family:Noteworthy;
+}
+.gamewatermelon{
+    display: block;
+    width: 52%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.gamewatermelon2{
+    display: block;
+    width: 40%;
+/*    border:solid yellow 1px;*/
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+}
+
+
+
+/*
+     FILE ARCHIVED ON 04:55:46 Apr 06, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:12:03 Feb 12, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.644
+  exclusion.robots: 0.052
+  exclusion.robots.policy: 0.039
+  esindex: 0.012
+  cdx.remote: 15.502
+  LoadShardBlock: 254.157 (3)
+  PetaboxLoader3.datanode: 151.288 (4)
+  PetaboxLoader3.resolve: 216.626 (3)
+  load_resource: 136.693
+*/
