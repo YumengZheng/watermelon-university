@@ -341,16 +341,17 @@ It is better to choose neither the largest nor the smallest watermelon. The size
 <!--gender-->
 <div id="gender">
     <p class="gender">Watermelon has gender!</p>
-<!--animation-->
-    <div id="scrollanimation">
-    <img src="image/watermelonman.png" class="watermelonman">
-    <img src="image/watermelonwoman.png" class="watermelonwoman">
+    <div class="gender-static">
+        <div class="gender-card">
+            <img src="image/watermelonman.png" class="gender-img">
+            <p class="genderman">The male watermelon are bigger, have an elongated shape, and a watery taste.</p>
+        </div>
+        <div class="gender-card">
+            <img src="image/watermelonwoman.png" class="gender-img">
+            <p class="genderwoman">The female watermelon have a rounded shape and are very sweet.</p>
+        </div>
     </div>
-
-        <div class="genderboxsapce">
-            <div class="genderbox"><div class="whiteback"><p class="genderman">The male watermelon are bigger, have an elongated shape, and a watery taste. </p></div></div>
-            <div class="genderbox"><div class="whitebackw"><p class="genderwoman">The female watermelon have a rounded shape and are very sweet. </p></div></div>
-        </div></div>
+</div>
 
 <!--game-->
 <div class="gameimagebox">
@@ -457,18 +458,6 @@ window.addEventListener('scroll', function(e){
 })
 
 
-$(document).ready(function(){
-   var waypoint = new Waypoint({
-  element: $('#step5'),
-  handler: function() {
-   $(".watermelonman").addClass("watermelonman2");
-   $(".watermelonman").removeClass("watermelonman");
-   $(".watermelonwoman").addClass("watermelonwoman2");
-   $(".watermelonwoman").removeClass("watermelonwoman");
-   $('.whiteback,.whitebackw'). delay(2000).fadeIn(900);
-  }
-});
-});
 
 
 //game

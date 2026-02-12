@@ -289,64 +289,25 @@ ul.alternative li {
     margin-left: 6%;
     margin-top: 7%;
 }
-/*animation*/
-#scrollanimation{
-    margin-top:4.5%;
-    height: 12% ;
-/*    border: solid yellow 1px;*/
-}
-.watermelonman{
-    display: none;
-}
-.watermelonwoman{
-    display: none;
-}
-@keyframes man {
-    from {margin-left:-20%;}
-    to {margin-left: 23%;}
-    }
-@keyframes woman {
-    from {margin-right:-20%;}
-    to {margin-right: 23%;}
-    }
-.watermelonman2{
-    animation-name:man;
-    animation-duration: 2s;
-    margin-left: 23%;
-}
-.watermelonwoman2{
-    float: right;
-    margin-right: 23%;
-    animation-name:woman;
-    animation-duration: 2s;
-}
-.genderboxsapce{ 
+/*gender static layout*/
+.gender-static{
     display: flex;
-    flex: 2;
-    height:65px;
-/*    border:solid yellow 1px;*/
-
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 0 5%;
 }
-.genderbox{
-    width: 50%;
-/*    border:solid yellow 1px;*/
-}
-.whiteback{
-    display:none;
-    width: 49%;
-    margin-left:37%;
+.gender-card{
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    height: 100%;
+    padding: 20px;
+    width: 40%;
 }
-.whitebackw{
-    float:right;
-    display: none;
-    width: 49%;
-    margin-right: 34%;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    height: 100%;
+.gender-img{
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
 }
 .genderman{
     display: block;
@@ -355,8 +316,7 @@ ul.alternative li {
     margin: 0 auto;
     font-size: 16px;
     color: white;
-    padding-left:2%;
-    padding-top:4%; 
+    padding-top:4%;
 }
 .genderwoman{
     display: block;
@@ -365,8 +325,7 @@ ul.alternative li {
     margin: 0 auto;
     font-size: 16px;
     color: white;
-    padding-left:3%;
-    padding-top:4%; 
+    padding-top:4%;
 }    
 /*game*/
 .game{
